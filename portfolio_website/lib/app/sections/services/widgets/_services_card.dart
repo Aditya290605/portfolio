@@ -1,7 +1,7 @@
 part of '../services.dart';
 
 class _ServiceCard extends StatefulWidget {
-  final ServicesUtils service;
+  final SkillItem service;
 
   const _ServiceCard({Key? key, required this.service}) : super(key: key);
 
@@ -49,7 +49,7 @@ class _ServiceCardState extends State<_ServiceCard> {
             ),
             Space.y(1.w)!,
             Text(
-              widget.service.description,
+              'widget.service.description',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: isHover ? whiteColor.withOpacity(0.8) : theme.textColor,
@@ -61,42 +61,14 @@ class _ServiceCardState extends State<_ServiceCard> {
             if (Responsive.isDesktop(context))
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: widget.service.tool
-                    .map(
-                      (e) => Row(
-                        children: [
-                          const Text('🛠   '),
-                          Text(
-                            e,
-                            style: TextStyle(
-                              color: isHover ? whiteColor : theme.textColor,
-                            ),
-                          ),
-                        ],
-                      ),
-                    )
-                    .toList(),
+                children: [],
               ),
             if (Responsive.isMobile(context) || Responsive.isTablet(context))
               Expanded(
                 child: ListView(
                   padding: EdgeInsets.zero,
                   shrinkWrap: true,
-                  children: widget.service.tool
-                      .map(
-                        (e) => Row(
-                          children: [
-                            const Text('🛠   '),
-                            Text(
-                              e,
-                              style: TextStyle(
-                                color: isHover ? whiteColor : theme.textColor,
-                              ),
-                            ),
-                          ],
-                        ),
-                      )
-                      .toList(),
+                  children: [],
                 ),
               ),
           ],

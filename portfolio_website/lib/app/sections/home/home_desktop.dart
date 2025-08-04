@@ -6,7 +6,7 @@ import 'package:portfolio_website/changes/strings.dart';
 import 'package:portfolio_website/core/animations/entrance_fader.dart';
 import 'package:portfolio_website/core/animations/zoom_animation.dart';
 import 'package:portfolio_website/core/configs/configs.dart';
-import 'package:portfolio_website/core/configs/others/space.dart';
+
 import 'package:portfolio_website/core/res/responsive_size.dart';
 import 'package:sizer/sizer.dart';
 import 'package:universal_html/html.dart' as html;
@@ -14,7 +14,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class HomeDesktop extends StatelessWidget {
-  const HomeDesktop({Key? key}) : super(key: key);
+  const HomeDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -83,7 +83,7 @@ class ProjectCardState extends State<ProjectCard> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
-                    image: AssetImage(widget.project.banners),
+                    image: NetworkImage(widget.project.banners),
                     fit: BoxFit.cover,
                   ),
                 ),

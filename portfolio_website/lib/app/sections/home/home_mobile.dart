@@ -16,7 +16,7 @@ import 'package:universal_html/html.dart' as html;
 import 'widgets/animation_text.dart';
 
 class HomeMobile extends StatelessWidget {
-  const HomeMobile({Key? key}) : super(key: key);
+  const HomeMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

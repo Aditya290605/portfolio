@@ -31,7 +31,7 @@ class MySite extends StatelessWidget {
               builder: (context, orientation, deviceType) {
                 return MaterialApp(
                   debugShowCheckedModeBanner: false,
-                  title: 'Sudesh',
+                  title: 'Aditya',
                   theme: AppTheme.themeData(state.isDarkThemeOn, context),
                   initialRoute: "/",
                   routes: {"/": (context) => const NChecking()},
