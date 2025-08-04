@@ -5,8 +5,6 @@ class ServiceMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-
     return Column(
       children: [
         const CustomSectionHeading(text: '\nWhat I can do?'),
@@ -32,7 +30,7 @@ class ServiceMobile extends StatelessWidget {
             autoPlayAnimationDuration: const Duration(milliseconds: 800),
             enableInfiniteScroll: false,
           ),
-        )
+        ),
       ],
     );
   }

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/core/color/colors.dart';
-import 'package:mysite/core/configs/configs.dart';
-import 'package:mysite/core/res/responsive.dart';
+import 'package:portfolio_website/core/color/colors.dart';
+import 'package:portfolio_website/core/configs/configs.dart';
+
+import 'package:portfolio_website/core/res/responsive.dart';
 
 class ColorChageButton extends StatelessWidget {
   final String text;
   final Function() onTap;
   const ColorChageButton({Key? key, required this.text, required this.onTap})
-      : super(key: key);
+    : super(key: key);
   @override
   @override
   Widget build(BuildContext context) {
@@ -23,9 +24,8 @@ class MobileCCButton extends StatefulWidget {
   final String text;
   final Function() onTap;
   const MobileCCButton({Key? key, required this.text, required this.onTap})
-      : super(key: key);
+    : super(key: key);
   @override
-
   // ignore: library_private_types_in_public_api
   _MobileCCButtonState createState() => _MobileCCButtonState();
 }
@@ -76,10 +76,7 @@ class _MobileCCButtonState extends State<MobileCCButton> {
             child: Center(
               child: Text(
                 widget.text.toUpperCase(),
-                style: TextStyle(
-                  color: theme.textColor,
-                  fontSize: 13,
-                ),
+                style: TextStyle(color: theme.textColor, fontSize: 13),
               ),
             ),
           ),
@@ -92,13 +89,9 @@ class _MobileCCButtonState extends State<MobileCCButton> {
 class TabCCButton extends StatefulWidget {
   final String text;
   final Function() onTap;
-  const TabCCButton({
-    Key? key,
-    required this.text,
-    required this.onTap,
-  }) : super(key: key);
+  const TabCCButton({Key? key, required this.text, required this.onTap})
+    : super(key: key);
   @override
-
   // ignore: library_private_types_in_public_api
   _TabCCButtonState createState() => _TabCCButtonState();
 }
@@ -133,29 +126,27 @@ class _TabCCButtonState extends State<TabCCButton> {
           ),
         ),
         InkWell(
-            onHover: (value) {
-              setState(() {
-                isHover = !isHover;
-                _animatedWidth = value ? 200 : 0.0;
-              });
-            },
-            onTap: () {
-              setState(() => _animatedWidth = 200);
-              widget.onTap();
-            },
-            child: SizedBox(
-              height: 50,
-              width: 200,
-              child: Center(
-                child: Text(
-                  widget.text.toUpperCase(),
-                  style: TextStyle(
-                    color: theme.textColor,
-                    fontSize: 16,
-                  ),
-                ),
+          onHover: (value) {
+            setState(() {
+              isHover = !isHover;
+              _animatedWidth = value ? 200 : 0.0;
+            });
+          },
+          onTap: () {
+            setState(() => _animatedWidth = 200);
+            widget.onTap();
+          },
+          child: SizedBox(
+            height: 50,
+            width: 200,
+            child: Center(
+              child: Text(
+                widget.text.toUpperCase(),
+                style: TextStyle(color: theme.textColor, fontSize: 16),
               ),
-            )),
+            ),
+          ),
+        ),
       ],
     );
   }
@@ -164,13 +155,9 @@ class _TabCCButtonState extends State<TabCCButton> {
 class DesktopCCButton extends StatefulWidget {
   final String text;
   final Function() onTap;
-  const DesktopCCButton({
-    Key? key,
-    required this.text,
-    required this.onTap,
-  }) : super(key: key);
+  const DesktopCCButton({Key? key, required this.text, required this.onTap})
+    : super(key: key);
   @override
-
   // ignore: library_private_types_in_public_api
   _DesktopCCButtonState createState() => _DesktopCCButtonState();
 }

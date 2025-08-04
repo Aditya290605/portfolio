@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/core/configs/configs.dart';
-import 'package:mysite/core/res/responsive.dart';
+import 'package:portfolio_website/core/configs/configs.dart';
+import 'package:portfolio_website/core/res/responsive.dart';
 
 class NavBarLogo extends StatelessWidget {
   const NavBarLogo({Key? key}) : super(key: key);
@@ -21,10 +21,7 @@ class NavBarLogo extends StatelessWidget {
       children: [
         Text("< ", style: textSty),
         Text("Sudesh", style: textSty),
-        Text(
-          Responsive.isDesktop(context) ? " />\t\t" : " />",
-          style: textSty,
-        )
+        Text(Responsive.isDesktop(context) ? " />\t\t" : " />", style: textSty),
       ],
     );
   }

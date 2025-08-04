@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_website/core/res/responsive.dart';
 import 'portfolio_desktop.dart';
 import 'portfolio_mobile.dart';
-import 'package:mysite/core/res/responsive.dart';
 
 class Portfolio extends StatelessWidget {
-  const Portfolio({Key? key}) : super(key: key);
+  const Portfolio({super.key});
 
   @override
   Widget build(BuildContext context) {

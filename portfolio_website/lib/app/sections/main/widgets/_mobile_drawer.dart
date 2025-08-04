@@ -27,8 +27,9 @@ class _MobileDrawer extends StatelessWidget {
                           : Icons.light_mode,
                       // color: theme.textColor,
                     ),
-                    title:
-                        Text(state.isDarkThemeOn ? "Light Mode" : "Dark Mode"),
+                    title: Text(
+                      state.isDarkThemeOn ? "Light Mode" : "Dark Mode",
+                    ),
                     trailing: Switch(
                       value: state.isDarkThemeOn,
                       activeColor: theme.primaryColor,
@@ -40,28 +41,28 @@ class _MobileDrawer extends StatelessWidget {
                   ),
                   const Divider(),
                   ...NavBarUtils.names.asMap().entries.map(
-                        (e) => Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: MaterialButton(
-                            hoverColor: theme.primaryColor.withAlpha(70),
-                            onPressed: () {
-                              // scrollProvider.scrollMobile(e.key);
-                              scrollProvider.jumpTo(e.key);
-                              Navigator.pop(context);
-                            },
-                            child: ListTile(
-                              leading: Icon(
-                                NavBarUtils.icons[e.key],
-                                // color: theme.primaryColor,
-                              ),
-                              title: Text(
-                                e.value,
-                                // style: AppText.l1,
-                              ),
-                            ),
+                    (e) => Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: MaterialButton(
+                        hoverColor: theme.primaryColor.withAlpha(70),
+                        onPressed: () {
+                          // scrollProvider.scrollMobile(e.key);
+                          scrollProvider.jumpTo(e.key);
+                          Navigator.pop(context);
+                        },
+                        child: ListTile(
+                          leading: Icon(
+                            NavBarUtils.icons[e.key],
+                            // color: theme.primaryColor,
+                          ),
+                          title: Text(
+                            e.value,
+                            // style: AppText.l1,
                           ),
                         ),
                       ),
+                    ),
+                  ),
                   Space.y(5.w)!,
                   ColorChageButton(
                     text: 'RESUME',

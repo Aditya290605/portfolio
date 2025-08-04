@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/core/animations/entrance_fader.dart';
-import 'package:mysite/core/color/colors.dart';
-import 'package:mysite/core/providers/scroll_provider.dart';
+import 'package:portfolio_website/core/animations/entrance_fader.dart';
+import 'package:portfolio_website/core/color/colors.dart';
+import 'package:portfolio_website/core/providers/scroll_provider.dart';
+
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 
@@ -24,8 +25,9 @@ class ArrowOnTopState extends State<ArrowOnTop> {
       child: EntranceFader(
         offset: const Offset(0, 20),
         child: Padding(
-          padding:
-              EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.025),
+          padding: EdgeInsets.only(
+            top: MediaQuery.of(context).size.height * 0.025,
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -51,7 +53,7 @@ class ArrowOnTopState extends State<ArrowOnTop> {
                             const BoxShadow(
                               blurRadius: 12.0,
                               offset: Offset(2.0, 3.0),
-                            )
+                            ),
                           ]
                         : null,
                   ),

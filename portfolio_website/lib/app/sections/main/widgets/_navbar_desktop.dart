@@ -13,22 +13,23 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
     Size size = MediaQuery.of(context).size;
     // theme
     var theme = Theme.of(context);
-    return BlocBuilder<ThemeCubit, ThemeState>(builder: (context, state) {
-      return Container(
-        padding: EdgeInsets.symmetric(horizontal: size.width / 8, vertical: 10),
-        color: theme.navBarColor,
-        child: Row(
-          children: [
-            const NavBarLogo(),
-            Space.xm!,
-            ...NavBarUtils.names.asMap().entries.map(
-                  (e) => NavBarActionButton(
-                    label: e.value,
-                    index: e.key,
-                  ),
-                ),
-            // Space.x!,
-            InkWell(
+    return BlocBuilder<ThemeCubit, ThemeState>(
+      builder: (context, state) {
+        return Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width / 8,
+            vertical: 10,
+          ),
+          color: theme.navBarColor,
+          child: Row(
+            children: [
+              const NavBarLogo(),
+              Space.xm!,
+              ...NavBarUtils.names.asMap().entries.map(
+                (e) => NavBarActionButton(label: e.value, index: e.key),
+              ),
+              // Space.x!,
+              InkWell(
                 onTap: () {
                   context.read<ThemeCubit>().updateTheme(!state.isDarkThemeOn);
                 },
@@ -37,12 +38,14 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
                   height: 30,
                   width: 30,
                   color: state.isDarkThemeOn ? Colors.black : Colors.white,
-                )),
-            // Space.x!,
-          ],
-        ),
-      );
-    });
+                ),
+              ),
+              // Space.x!,
+            ],
+          ),
+        );
+      },
+    );
   }
 }
 
@@ -56,7 +59,9 @@ class _NavBarTablet extends StatelessWidget {
     return Container(
       color: theme.navBarColor,
       padding: EdgeInsets.symmetric(
-          horizontal: Responsive.isTablet(context) ? 10.w : 10, vertical: 10),
+        horizontal: Responsive.isTablet(context) ? 10.w : 10,
+        vertical: 10,
+      ),
       child: Row(
         children: [
           IconButton(

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/app/utils/project_utils.dart';
-import 'package:mysite/core/color/colors.dart';
-import 'package:mysite/core/configs/configs.dart';
-import 'package:mysite/core/res/responsive.dart';
-import 'package:mysite/core/util/constants.dart';
+import 'package:portfolio_website/app/utils/project_utils.dart';
+import 'package:portfolio_website/core/color/colors.dart';
+import 'package:portfolio_website/core/configs/configs.dart';
+import 'package:portfolio_website/core/res/responsive.dart';
+import 'package:portfolio_website/core/util/constants.dart';
+
 import 'package:sizer/sizer.dart';
 
 class ProjectCard extends StatefulWidget {
@@ -51,10 +52,7 @@ class ProjectCardState extends State<ProjectCard> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    widget.project.icons,
-                    height: height * 0.05,
-                  ),
+                  Image.asset(widget.project.icons, height: height * 0.05),
                   SizedBox(height: height * 0.02),
                   Text(
                     widget.project.titles,
@@ -85,8 +83,9 @@ class ProjectCardState extends State<ProjectCard> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
-                      image: AssetImage(widget.project.banners),
-                      fit: BoxFit.cover),
+                    image: AssetImage(widget.project.banners),
+                    fit: BoxFit.cover,
+                  ),
                 ),
                 // child: Image.asset(
                 //   widget.project.banners,

@@ -40,16 +40,13 @@ class _ServiceCardState extends State<_ServiceCard> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset(
-              widget.service.icon,
-              height: 60,
-            ),
+            SvgPicture.asset(widget.service.icon, height: 60),
             Space.y(3.w)!,
-            Text(widget.service.name,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: isHover ? whiteColor : theme.textColor,
-                )),
+            Text(
+              widget.service.name,
+              textAlign: TextAlign.center,
+              style: TextStyle(color: isHover ? whiteColor : theme.textColor),
+            ),
             Space.y(1.w)!,
             Text(
               widget.service.description,
@@ -63,38 +60,45 @@ class _ServiceCardState extends State<_ServiceCard> {
             Space.y(2.w)!,
             if (Responsive.isDesktop(context))
               Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: widget.service.tool
-                      .map((e) => Row(
-                            children: [
-                              const Text('🛠   '),
-                              Text(e,
-                                  style: TextStyle(
-                                    color:
-                                        isHover ? whiteColor : theme.textColor,
-                                  )),
-                            ],
-                          ))
-                      .toList()),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: widget.service.tool
+                    .map(
+                      (e) => Row(
+                        children: [
+                          const Text('🛠   '),
+                          Text(
+                            e,
+                            style: TextStyle(
+                              color: isHover ? whiteColor : theme.textColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                    .toList(),
+              ),
             if (Responsive.isMobile(context) || Responsive.isTablet(context))
               Expanded(
                 child: ListView(
-                    padding: EdgeInsets.zero,
-                    shrinkWrap: true,
-                    children: widget.service.tool
-                        .map((e) => Row(
-                              children: [
-                                const Text('🛠   '),
-                                Text(e,
-                                    style: TextStyle(
-                                      color: isHover
-                                          ? whiteColor
-                                          : theme.textColor,
-                                    )),
-                              ],
-                            ))
-                        .toList()),
-              )
+                  padding: EdgeInsets.zero,
+                  shrinkWrap: true,
+                  children: widget.service.tool
+                      .map(
+                        (e) => Row(
+                          children: [
+                            const Text('🛠   '),
+                            Text(
+                              e,
+                              style: TextStyle(
+                                color: isHover ? whiteColor : theme.textColor,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                      .toList(),
+                ),
+              ),
           ],
         ),
       ),
