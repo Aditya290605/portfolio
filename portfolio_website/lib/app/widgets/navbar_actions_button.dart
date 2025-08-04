@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/core/animations/entrance_fader.dart';
-import 'package:mysite/core/color/colors.dart';
-import 'package:mysite/core/configs/configs.dart';
-import 'package:mysite/core/providers/scroll_provider.dart';
+import 'package:portfolio_website/core/animations/entrance_fader.dart';
+import 'package:portfolio_website/core/color/colors.dart';
+import 'package:portfolio_website/core/configs/configs.dart';
+import 'package:portfolio_website/core/providers/scroll_provider.dart';
+
 import 'package:provider/provider.dart';
 
 class NavBarActionButton extends StatefulWidget {
   final String label;
   final int index;
-  const NavBarActionButton({
-    Key? key,
-    required this.label,
-    required this.index,
-  }) : super(key: key);
+  const NavBarActionButton({Key? key, required this.label, required this.index})
+    : super(key: key);
 
   @override
   State<NavBarActionButton> createState() => _NavBarActionButtonState();
@@ -44,10 +42,7 @@ class _NavBarActionButtonState extends State<NavBarActionButton> {
           },
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: Text(
-              widget.label,
-              style: TextStyle(color: theme.textColor),
-            ),
+            child: Text(widget.label, style: TextStyle(color: theme.textColor)),
           ),
         ),
       ),

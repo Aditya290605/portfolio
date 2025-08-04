@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/app/utils/project_utils.dart';
-import 'package:mysite/app/widgets/custom_text_heading.dart';
-import 'package:mysite/changes/links.dart';
-import 'package:mysite/changes/strings.dart';
-import 'package:mysite/core/configs/configs.dart';
-import 'package:mysite/core/util/constants.dart';
+import 'package:portfolio_website/app/utils/project_utils.dart';
+import 'package:portfolio_website/app/widgets/custom_text_heading.dart';
+import 'package:portfolio_website/changes/links.dart';
+import 'package:portfolio_website/changes/strings.dart';
+import 'package:portfolio_website/core/configs/others/space.dart';
+import 'package:portfolio_website/core/util/constants.dart';
+
 import 'package:sizer/sizer.dart';
 
 import 'widgets/project_card.dart';
@@ -35,9 +36,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
             children: projectUtils
                 .asMap()
                 .entries
-                .map(
-                  (e) => ProjectCard(project: e.value),
-                )
+                .map((e) => ProjectCard(project: e.value))
                 .toList(),
           ),
           Space.y(3.w)!,
@@ -47,13 +46,10 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
               padding: EdgeInsets.all(8.0),
               child: Text(
                 'See More',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/app/utils/contact_utils.dart';
-import 'package:mysite/app/widgets/custom_text_heading.dart';
-import 'package:mysite/changes/links.dart';
-import 'package:mysite/changes/strings.dart';
-import 'package:mysite/core/color/colors.dart';
-import 'package:mysite/core/configs/configs.dart';
-import 'package:mysite/core/util/constants.dart';
+import 'package:portfolio_website/app/utils/contact_utils.dart';
+import 'package:portfolio_website/app/widgets/custom_text_heading.dart';
+import 'package:portfolio_website/changes/links.dart';
+import 'package:portfolio_website/changes/strings.dart';
+import 'package:portfolio_website/core/color/colors.dart';
+import 'package:portfolio_website/core/configs/configs.dart';
+import 'package:portfolio_website/core/configs/others/space.dart';
+import 'package:portfolio_website/core/util/constants.dart';
+
 import 'package:sizer/sizer.dart';
 
 class ContactMobileTab extends StatelessWidget {
@@ -29,7 +31,9 @@ class ContactMobileTab extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
             decoration: BoxDecoration(
-                gradient: buttonGradi, borderRadius: BorderRadius.circular(10)),
+              gradient: buttonGradi,
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: const Text(
               'Get Started',
               style: TextStyle(
@@ -42,21 +46,21 @@ class ContactMobileTab extends StatelessWidget {
         ),
         Space.y(10.w)!,
         Wrap(
-            alignment: WrapAlignment.center,
-            runSpacing: 50,
-            children: contactUtils
-                .asMap()
-                .entries
-                .map((e) => IconButton(
-                      icon: Image.network(
-                        e.value.icon,
-                        color: theme.textColor,
-                      ),
-                      onPressed: () => openURL(e.value.url),
-                      highlightColor: Colors.white54,
-                      iconSize: 21,
-                    ))
-                .toList()),
+          alignment: WrapAlignment.center,
+          runSpacing: 50,
+          children: contactUtils
+              .asMap()
+              .entries
+              .map(
+                (e) => IconButton(
+                  icon: Image.network(e.value.icon, color: theme.textColor),
+                  onPressed: () => openURL(e.value.url),
+                  highlightColor: Colors.white54,
+                  iconSize: 21,
+                ),
+              )
+              .toList(),
+        ),
         Space.y(5.w)!,
         Container(color: Colors.white.withOpacity(0.2), height: 1),
       ],
