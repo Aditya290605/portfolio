@@ -1,98 +1,42 @@
-# 💼 Aditya's Portfolio Website
+# devfolio
 
-A modern, responsive **portfolio website** built using **Flutter**, showcasing my projects, skills, about section, and contact information — all crafted to present myself professionally as a **Mobile App Developer**.
+<a href="https://shubhporwal.me">
+  <img alt="devfolio" src="./public/preview.png" />
+</a>
 
-## 🚀 Live Preview
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+</p>
 
-🔗 [Check the Live Site](https://portfolio-henna-nu-v4yfbcoomo.vercel.app/)  
-📱 Best viewed on desktop and mobile screens.
+👨‍🎓 An eye-catching developer Portfolio, Built on NextJS, GSAP, Tailwind and React
 
----
+### ✨ [Live Demo](http://www.shubhporwal.me/)
 
-## 📸 Screenshots
+## Getting Started
 
-| <img src='https://i.postimg.cc/dV9kHbcL/image.png' width='500'>|<img src='https://i.postimg.cc/s2DBtT3K/image.png' width='500'> |
-|:---:|--------|
+In the project directory, you can run:
 
----
+#### `bun install`
 
-## 🛠️ Tech Stack
+#### `bun dev`
 
-- **Flutter** (Web Support)
-- **Dart**
-- `url_launcher` – To launch email, WhatsApp, and external links  
-- `google_fonts` – Custom fonts  
-- `animated_text_kit` – Typing animation effect  
-- `flutter_svg` – Replaced with network logos for icons  
-- `get` – For navigation or state management (if used)
+Runs the app in the development mode.\
+Open [`http://localhost:3000`](http://localhost:3000) to view it in the browser.
 
----
+## Design
 
-## ✨ Features
+You can always draw inspiration from the design, and no, you don't have to give me credits for that.
 
-- ✅ Animated job titles using `animated_text_kit`
-- ✅ Responsive design (Mobile + Desktop compatible)
-- ✅ Skill logos using network images (GitHub-like icons)
-- ✅ Project showcase with GitHub links
-- ✅ "About Me" section with education and experience
-- ✅ Contact buttons (Email, WhatsApp)
-- ✅ Clean and minimal UI
+## Forking
 
----
+When people ask me whether they may use the code for their own website, I typically say yes as long as they provide proper attribution.
 
-## 📂 Folder Structure
+Every time I learn that someone has duplicated my website without giving me credit, it saddens me. This version of my website took a significant amount of work to construct, and I'm pleased of it! All I ask is that you empathize with my situation and leave the footer unaltered.
 
-```bash
-lib/
-├── main.dart                # Entry point
-├── pages/                   # All major UI pages (home, contact, about)
-├── components/              # Reusable widgets like skill cards, headers
-├── utils/                   # Constants, theme, asset links
-└── data/                    # Projects list, skills, and animation strings
-```
+## Star History
 
----
-
-## 🔧 Getting Started
-✅ Prerequisites
-Flutter SDK (>=3.10.0)
-
-Dart (auto-installed with Flutter)
-
-Any IDE (VSCode, Android Studio, etc.)
-
----
-
-## ▶️ Run Locally
-```bash
-git clone https://github.com/Aditya290605/portfolio.git
-cd portfolio
-flutter pub get
-flutter run -d chrome
-```
-
-To build the web version:
-
-```bash
-flutter build web
-```
-
----
-
-## 📫 Contact
-If you'd like to connect or collaborate:
-
-📧 Email: adityamagar734@gmail.com
-
-💬 WhatsApp: Click to Chat
-
-🔗 GitHub: @Aditya290605
-
-💼 LinkedIn: (Add your link if you want)
-
----
-
-## 🙋‍♂️ Credits
-Built entirely by Aditya Magar
-
-Flutter ❤️
+[![Star History Chart](https://api.star-history.com/svg?repos=shubh73/devfolio&type=Date)](https://www.star-history.com/#shubh73/devfolio&Date)
