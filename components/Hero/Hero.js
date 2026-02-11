@@ -63,9 +63,9 @@ const Hero = () => {
         </h5>
         <h1 className={`${styles.heroName} text-white text-6xl font-semibold`}>
           <span className={`relative ${styles.emphasize} staggered-reveal`}>
-            Shubh
+            Aditya
           </span>
-          <span className="staggered-reveal"> Porwal</span>
+          <span className="staggered-reveal"> Magar</span>
         </h1>
         <p>
           <span
@@ -82,7 +82,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute invisible w-4/12 h-[80%] bottom-1.5 lg:visible lg:right-12 2xl:right-16">
+      <div className="absolute invisible w-6/12 h-[80%] top-1/2 -translate-y-1/2 lg:visible lg:right-12 2xl:right-16">
         <SplineScene
           scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
           className="w-full h-full"
