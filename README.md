@@ -1,7 +1,7 @@
 # devfolio
 
-<a href="https://shubhporwal.me">
-  <img alt="devfolio" src="./public/preview.png" />
+<a href="https://portfolio-qotc.vercel.app/">
+  <img alt="devfolio" src="https://i.postimg.cc/HxhDGF3r/Screenshot-2026-02-11-at-10-51-46-PM.png" />
 </a>
 
 <p>
@@ -14,7 +14,7 @@
 
 👨‍🎓 An eye-catching developer Portfolio, Built on NextJS, GSAP, Tailwind and React
 
-### ✨ [Live Demo](http://www.shubhporwal.me/)
+### ✨ [Live Demo](https://portfolio-qotc.vercel.app/)
 
 ## Getting Started
 
