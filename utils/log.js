@@ -1,6 +1,6 @@
 export const displayFancyLogs = () => {
   console.log(
-    "%c  ____  _           _     _       ____                          _\n / ___|| |__  _   _| |__ | |__   |  _ \\ ___  _ ____      ____ _| |\n \\___ \\| '_ \\| | | | '_ \\| '_ \\  | |_) / _ \\| '__\\ \\ /\\ / / _` | |\n  ___) | | | | |_| | |_) | | | | |  __/ (_) | |   \\ V  V / (_| | |\n |____/|_| |_|\\__,_|_.__/|_| |_| |_|   \\___/|_|    \\_/\\_/ \\__,_|_|\n",
+    "%c     _       _ _ _                __  __                        \n    / \\   __| (_) |_ _   _  __ _  |  \\/  | __ _  __ _  __ _ _ __ \n   / _ \\ / _` | | __| | | |/ _` | | |\\/| |/ _` |/ _` |/ _` | '__|\n  / ___ \\ (_| | | |_| |_| | (_| | | |  | | (_| | (_| | (_| | |   \n /_/   \\_\\__,_|_|\\__|\\__, |\\__,_| |_|  |_|\\__,_|\\__, |\\__,_|_|   \n                     |___/                       |___/            \n",
     "color: #6b17e8;"
   );
 
@@ -9,9 +9,8 @@ export const displayFancyLogs = () => {
     "color: #6b17e8; padding: 6px;"
   );
 
-  // Easter egg hint
   console.log(
-    "%c 💡 Psst! There's a secret hiding in plain sight. Follow your heart, it might lead to something... interesting.",
+    "%c 💡 Flutter Developer | Building scalable mobile experiences",
     "color: #6b17e8; font-style: italic; padding: 6px;"
   );
 };
