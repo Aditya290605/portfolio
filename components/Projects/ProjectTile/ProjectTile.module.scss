@@ -1,0 +1,40 @@
+.projectTile {
+  height: 22rem;
+  width: 38rem;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+
+  @media (min-width: 768px) {
+    height: 26rem;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.projectImage {
+  @apply absolute top-0 rounded-xl shadow-xl;
+
+  width: 17rem !important;
+  max-width: 17rem !important;
+  transform: rotate(-22.5deg);
+  height: unset !important;
+  min-width: unset !important;
+  max-height: unset !important;
+  object-fit: contain !important;
+  left: unset !important;
+  right: 2rem !important;
+  bottom: unset !important;
+  clip-path: inset(0);
+  z-index: 0;
+
+  @media (max-width: 480px) {
+    width: clamp(12rem, 40vw, 16rem) !important;
+    right: clamp(-2rem, 2vw, 1.5rem) !important;
+  }
+}
+
+.techIcons {
+  transform: rotate(-22.5deg) translateZ(3rem);
+}
