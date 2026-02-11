@@ -9,6 +9,10 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@next/third-parties": "^14.2.13",
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^1.12.52",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
     "bad-words": "^3.0.4",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.9",
@@ -23,6 +27,7 @@
     "sass": "^1.77.1",
     "tailwind-merge": "^2.3.0",
     "typed.js": "^2.1.0",
+    "typescript": "^5.9.3",
     "url-loader": "^4.1.1",
     "vanilla-tilt": "^1.8.1"
   },

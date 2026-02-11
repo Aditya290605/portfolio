@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef, useLayoutEffect } from "react";
+import { useEffect, useRef, useLayoutEffect } from "react";
 import Typed from "typed.js";
 import gsap from "gsap";
 import Button from "../Button/Button";
 import Profiles from "../Profiles/Profiles";
+import { SplineScene } from "../ui/splite";
 import styles from "./Hero.module.scss";
 import { MENULINKS, TYPED_STRINGS } from "../../constants";
 
@@ -16,11 +17,8 @@ const options = {
 };
 
 const Hero = () => {
-  const [lottie, setLottie] = useState(null);
-
   const sectionRef = useRef(null);
   const typedElementRef = useRef(null);
-  const lottieRef = useRef(null);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -42,24 +40,6 @@ const Hero = () => {
 
     return () => typed.destroy();
   }, [typedElementRef]);
-
-  useEffect(() => {
-    import("lottie-web").then((Lottie) => setLottie(Lottie.default));
-  }, []);
-
-  useEffect(() => {
-    if (lottie && lottieRef.current) {
-      const animation = lottie.loadAnimation({
-        container: lottieRef.current,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: require("../../public/lottie/lottie.json"),
-      });
-
-      return () => animation.destroy();
-    }
-  }, [lottie]);
 
   return (
     <section
@@ -102,12 +82,15 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div
-        className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
-        ref={lottieRef}
-      />
+      <div className="absolute invisible w-4/12 h-[80%] bottom-1.5 lg:visible lg:right-12 2xl:right-16">
+        <SplineScene
+          scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+          className="w-full h-full"
+        />
+      </div>
     </section>
   );
 };
 
 export default Hero;
+

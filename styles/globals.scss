@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --muted-foreground: 0 0% 45.1%;
+    --border: 0 0% 89.8%;
+  }
+
+  .dark {
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --muted-foreground: 0 0% 63.9%;
+    --border: 0 0% 14.9%;
+  }
+}
+
+.loader {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #8b31ff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 *,
 *::after,
 *::before {
