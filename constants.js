@@ -13,7 +13,7 @@ export const METADATA = {
     "Software Engineer",
     "Portfolio",
   ].join(", "),
-  image: "/preview.png",
+  image: "/preview-v2.png",
   language: "English",
   themeColor: "#000000",
 };
