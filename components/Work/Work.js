@@ -13,6 +13,7 @@ const Work = ({ isDesktop }) => {
       {
         title: "Spinacho",
         value: "spinacho",
+        image: "/experiece_logo/spinacho.png",
         content: (
           <StickyScroll
             isDesktop={isDesktop}
@@ -23,6 +24,7 @@ const Work = ({ isDesktop }) => {
       {
         title: "RevoltroneX",
         value: "revoltronex",
+        image: "/experiece_logo/revoltronx.png",
         content: (
           <StickyScroll
             isDesktop={isDesktop}
@@ -33,6 +35,7 @@ const Work = ({ isDesktop }) => {
       {
         title: "Liberdat",
         value: "liberdat",
+        image: "/experiece_logo/liberdat.jpeg",
         content: (
           <StickyScroll
             isDesktop={isDesktop}

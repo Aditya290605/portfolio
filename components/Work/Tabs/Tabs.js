@@ -23,10 +23,18 @@ const Tab = ({ index, tab, activeTab, handleOnClick, setIsHovering }) => {
 
       <span
         className={cn(
-          "relative text-white top-[3px] link",
+          "relative text-white top-[3px] link flex items-center gap-2",
           tab.value !== activeTab.value && "hover:text-gray-light-3"
         )}
       >
+        {tab.image && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={tab.image}
+            alt={`${tab.title} logo`}
+            className="w-5 h-5 rounded-full object-cover"
+          />
+        )}
         {tab.title}
       </span>
     </button>
