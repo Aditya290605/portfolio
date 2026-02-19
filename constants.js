@@ -199,20 +199,33 @@ export const WORK_CONTENTS = {
     {
       title: "Spinacho",
       description:
-        "Remote product-based startup focused on building scalable mobile solutions for modern businesses.",
+        "Flutter Developer · Internship · Apr 2025 - Jun 2025 · 3 mos · Pune, Maharashtra, India · Remote. First professional internship, working on rider and user mobile applications in a team environment.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Building scalable mobile solutions
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/spinacho.png" alt="Spinacho" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
         </div>
       ),
     },
     {
-      title: "Impact",
+      title: "Responsibilities",
       description:
-        "Developed scalable UI components for user and rider applications, integrated APIs with optimized state management, and worked closely with the backend team to ensure stable and reliable releases.",
+        "Implemented pixel-perfect mobile UIs in Flutter by translating Figma designs into functional screens. Built user and rider app interfaces following clean architecture principles. Collaborated with team members on UI/UX workflows and design consistency. Assisted in organizing tasks and coordinating with teammates during development.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Flutter Intern
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/spinacho.png" alt="Spinacho" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
+        </div>
+      ),
+    },
+    {
+      title: "Learnings & Impact",
+      description:
+        "Gained foundational experience in professional team workflows and task coordination. Learned how UI/UX decisions are made and how designs move from Figma to production code. Built a strong foundation in clean architecture and maintainable Flutter UI development.",
+      content: (
+        <div className="h-full w-full flex items-center justify-center text-white px-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/spinacho.png" alt="Spinacho" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
         </div>
       ),
     },
@@ -221,20 +234,33 @@ export const WORK_CONTENTS = {
     {
       title: "RevoltroneX",
       description:
-        "Tech company building cross-platform digital solutions with a focus on scalable architecture and modern development practices.",
+        "Flutter Developer Intern · Internship · Aug 2025 - Dec 2025 · 5 mos · Mumbai, Maharashtra, India · Remote. Worked on ArvyaX, a production-grade application featured at CES 2026, showcasing the product on a global technology stage.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Cross-platform digital solutions
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/revoltronx.png" alt="RevoltroneX" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
         </div>
       ),
     },
     {
-      title: "Contributions",
+      title: "Responsibilities",
       description:
-        "Built cross-platform modules for the Arvyax project, applied clean architecture patterns for maintainability, improved feature performance across the app, and contributed to deployment and production testing workflows.",
+        "Designed and developed the mobile application from scratch with the team. Built a highly dynamic app architecture using JSON-driven configurations. Implemented JSON serialization and handled complex network responses. Developed and integrated custom APIs for dynamic features. Managed backend data with MongoDB and Cloudflare. Worked on adding features to a live production app without breaking functionality.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Flutter Developer Intern
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/revoltronx.png" alt="RevoltroneX" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
+        </div>
+      ),
+    },
+    {
+      title: "Learnings & Impact",
+      description:
+        "Learned how professional teams collaborate, plan, and execute features at scale. Gained deep understanding of JSON-driven architecture for flexible and scalable apps. Improved skills in full-cycle feature development — from backend APIs to frontend integration. Developed confidence in working on live, evolving products used by real users.",
+      content: (
+        <div className="h-full w-full flex items-center justify-center text-white px-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/revoltronx.png" alt="RevoltroneX" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
         </div>
       ),
     },
@@ -243,20 +269,33 @@ export const WORK_CONTENTS = {
     {
       title: "Liberdat",
       description:
-        "Health-tech company focused on building analytics-driven solutions for the healthcare industry.",
+        "Flutter Developer · Internship · Dec 2025 - Jan 2026 · 2 mos · Amsterdam, North Holland, Netherlands · Remote. Worked on a real-time health analytics mobile app to monitor treatments, symptoms, and health trends.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Health-tech analytics solutions
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/liberdat.jpeg" alt="Liberdat" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
         </div>
       ),
     },
     {
-      title: "Delivery",
+      title: "Responsibilities",
       description:
-        "Developed a real-time health analytics application, simplified complex data visualizations for better usability, and assisted with Play Store and App Store release workflows.",
+        "Developed and maintained production-level Flutter & Dart code. Integrated APIs to fetch and display real-time health insights. Improved UX to make complex health data easy to understand. Participated in testing, bug reporting, and performance optimization. Assisted in deploying builds to Google Play Store and Apple App Store.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Flutter Developer
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/liberdat.jpeg" alt="Liberdat" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
+        </div>
+      ),
+    },
+    {
+      title: "Learnings & Impact",
+      description:
+        "Learned how real production apps are built, tested, and shipped. Gained experience working with international teams and managing tasks professionally. Understood the full app lifecycle from development to post-release improvements.",
+      content: (
+        <div className="h-full w-full flex items-center justify-center text-white px-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/experiece_logo/liberdat.jpeg" alt="Liberdat" className="w-28 h-28 object-contain rounded-xl drop-shadow-lg" />
         </div>
       ),
     },
