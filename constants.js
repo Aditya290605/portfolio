@@ -1,19 +1,23 @@
 export const METADATA = {
   author: "Aditya Magar",
-  title: "Portfolio | Aditya Magar",
+  title: "Aditya Magar | Flutter Developer & Software Engineer",
   description:
-    "Flutter Developer specializing in scalable, production-ready mobile applications with clean architecture, real-time data systems, and AI integrations.",
-  siteUrl: "https://adityamagar.dev/",
+    "Aditya Magar — Flutter Developer specializing in scalable, production-ready mobile applications with clean architecture, real-time data systems, and AI integrations.",
+  siteUrl: "https://adityamagar.me/",
   twitterHandle: "@AdityaM97708801",
   keywords: [
     "Aditya Magar",
+    "Aditya Magar portfolio",
+    "Aditya Magar Flutter developer",
     "Flutter Developer",
     "Mobile App Developer",
     "Cross Platform Developer",
     "Software Engineer",
+    "Dart developer",
+    "Flutter engineer India",
     "Portfolio",
   ].join(", "),
-  image: "/preview-v2.png",
+  image: "https://adityamagar.me/preview-v2.png",
   language: "English",
   themeColor: "#000000",
 };
